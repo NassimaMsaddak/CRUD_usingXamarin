@@ -1,6 +1,8 @@
-﻿using System;
+﻿using CRUD_usingXamarin.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace CRUD_usingXamarin
@@ -11,7 +13,7 @@ namespace CRUD_usingXamarin
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage =new NavigationPage(new HomePage());
         }
 
         protected override void OnStart()
